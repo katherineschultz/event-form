@@ -1,0 +1,106 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-size: 18px;
+    background-image: url("baconear2.jpg");
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: 100%;
+}
+
+.event {
+    margin: 0 auto;
+    width: 800px;
+}
+
+header {
+    background-color: rgba(204,255,255, .5);
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 800px;
+    padding: 8px
+}
+
+.wrap {
+    position: relative;
+    border: 1px solid #ccc;
+    width: 800px;
+    padding: 10px;
+}
+
+input[type="text"] {
+    border: none;
+}
+
+input[type="text"]:first-of-type {
+    position: absolute;
+    left: 200px;
+}
+
+input[type="text"]:nth-of-type(2) {
+    position: absolute;
+    left: 400px;
+}
+
+input[type="text"]:nth-of-type(3) {
+    position: absolute;
+    left: 600px;
+}
+
+.help {
+    display: none;
+}
+
+input[type="text"] ~ .help {
+    transition: all 250ms ease-in;
+}
+
+input[type="text"]:focus ~ .help {
+    display: block;
+    border: 1px solid white;
+    font-size: 12px;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    position: absolute;
+    right: -101px;
+    top: 0;
+    background: #aaa;
+}
+
+.radiobutton {
+    position: relative;
+    left: 140px;
+    margin-right: 50px;
+}
+
+label .radiobutton {
+    font-weight: normal;
+}
+
+.check {
+    font-weight: normal;
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+.button {
+    margin: 0 auto;
+    width: 200px;
+}
+
+button {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+@media screen and (min-width: 800px) {
+}
